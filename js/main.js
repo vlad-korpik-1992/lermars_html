@@ -15,4 +15,13 @@ $(document).ready(function() {
 		autoplay: false,
 		infinite: false
 	});
+	$('.shortlist__box').slick({
+		slidesToShow: 2,
+		slidesToScroll: 2,
+		rows: 1,
+		arrows: true,
+		dots: false,
+		autoplay: false,
+		infinite: false
+	});
 });
