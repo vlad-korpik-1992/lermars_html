@@ -24,4 +24,22 @@ $(document).ready(function() {
 		autoplay: false,
 		infinite: false
 	});
+	$('.rivals__box').slick({
+		slidesToShow: 2,
+		slidesToScroll: 2,
+		rows: 1,
+		arrows: true,
+		dots: false,
+		autoplay: false,
+		infinite: false
+	});
+	$('.partners__box').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		rows: 1,
+		arrows: true,
+		dots: false,
+		autoplay: true,
+		infinite: false
+	});
 });

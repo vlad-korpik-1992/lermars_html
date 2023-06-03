@@ -125,6 +125,10 @@ section{
     font-size: 20px;
     line-height: 120%;
     color: #FFFFFF;
+    transition: 0.3s all;
+}
+.header__menu__link:hover{
+    color: #0044D7;
 }
 .header__content{
     margin-top: 105px;
@@ -573,6 +577,10 @@ section{
     font-size: 16px;
     line-height: 120%;
     color: #FFFFFF;
+    transition: 0.3s all;
+}
+.footer__menu__list__link:hover{
+    color: #0044D7;
 }
 .footer__box__items{
     display: flex;
@@ -589,7 +597,11 @@ section{
     font-weight: 500;
     font-size: 16px;
     line-height: 120%;
-    color: #FFFFFF; 
+    color: #FFFFFF;
+    transition: 0.3s all;
+}
+.footer__link:hover{
+    color:#0044D7;
 }
 .footer__copy{
     display: flex;
@@ -604,6 +616,10 @@ section{
     line-height: 120%;
     color: #FFFFFF;
     text-decoration: underline;
+    transition: 0.3s all;
+}
+.footer__copy__link:hover{
+    color:#0044D7;
 }
 .header--single{
     position: relative;
@@ -635,6 +651,10 @@ section{
     font-size: 14px;
     line-height: 120%;
     color: #FFFFFF;
+    transition: 0.3s all;
+}
+.breadcrumbs__list__link:hover{
+    color: #0044D7;
 }
 .breadcrumbs__list__active{
     color: #C1C1C1;
@@ -781,9 +801,13 @@ section{
     padding: 16px;
     margin-top: 56px;
     background-color: #000;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.callme__form__btn:hover{
+    background: #0044D7;
 }
 .hero{
-    background-image: url(../img/project-hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -808,12 +832,15 @@ section{
     line-height: 120%;
 }
 .period{
+    margin-top: -160px;
+}
+.period--mt0{
     margin-top: 0;
 }
 .perion__box{
     display: flex;
     flex-wrap: wrap;
-    margin-left: -15px;
+    margin-left: 0;
     margin-right: -30px;
     padding: 110px 0;
 }
@@ -830,6 +857,13 @@ section{
 }
 .period__box__items__inner{
     padding-left: 50px;
+}
+.period__box__items__inner p{
+    display: block;
+    padding-top: 15px;
+    font-family: 'Gotham';
+    line-height: 167%;
+    color: #000000;
 }
 .period__box__items__inner h3{
     display: block;
@@ -866,6 +900,30 @@ section{
     color: #000000;
     padding-bottom: 50px;
 }
+.period__box__items__desc__box{
+    display: flex;
+    margin-left: -15;
+    margin-right: -15px;
+}
+.perion__box__items__desc__box__items{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.perion__box__items__desc__box__items:first-child{
+    flex: 0 0 73px;
+    max-width: 73px;
+}
+.perion__box__items__desc__box__items span{
+    display: block;
+    font-family: 'Gotham';
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    color: #000000;
+}
 .period__box__items__img{
     display: block;
     padding: 50px 0;
@@ -899,7 +957,8 @@ section{
     position: absolute;
     left: 0;
     bottom: 0;
-    max-width: 40%;
+    max-width: calc(50% - 167px);
+    height: calc(100%);
 }
 .enginner__box{
     display: flex;
@@ -995,10 +1054,19 @@ section{
     text-align: center;
     padding: 20px 30px;
     max-width: 335px;
+    transition: 0.3s all;
+}
+.breadcrumbs__title__link:hover{
+    background: #FFFFFF;
+    color: #000;
 }
 .benefits__box{
     display: grid;
     grid-template-columns: 30% auto 33%;
+    align-items: stretch;
+}
+.benefits__box__items{
+    display: flex;
 }
 .benefits__title{
     position: relative;
@@ -1016,14 +1084,22 @@ section{
 }
 .benefits__box__items__img{
     margin-top: -80px;
+    width: 100%;
 }
 .benefits__box__items__img img{
     width: 100%;
+    height: calc(100% + 24px);
 }
 .benefits__box__items--bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
     margin-top: -80px;
 }
 .benefits__box__items__content{
+    display: flex;
+    flex: 0 0 33.333%;
     padding: 29px;
     font-weight: 500;
     font-size: 20px;
@@ -1126,6 +1202,7 @@ section{
     font-weight: 700;
     font-size: 64px;
     line-height: 120%;
+    min-height: 474px;
 }
 .shortlist__box__items__bg h3{
     display: block;
@@ -1137,6 +1214,7 @@ section{
     width: 100%;
     background-color: #0044D7;
     padding: 50px 0 0 50px;
+    min-height: 474px;
 }
 .shortlist__box__items__inner h3{
     display: block;
@@ -1151,7 +1229,6 @@ section{
     display: block;
     font-family: 'Gotham';
     line-height: 156%;
-    padding-bottom: 269px;
 }
 .work{
     padding-top: 150px;
@@ -1242,13 +1319,185 @@ section{
 .work__box__items__list p{
     font-weight: 700;
 }
-@media (min-width: 1500px){
-    .enginner__img{
-        max-width: 30%;
-    }
+.rivals{
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-top: -80px;
 }
-@media (min-width: 1800px){
-    .enginner__img{
-        max-width: 27%;
+.rivals__box{
+    position: relative;
+    display: flex;
+}
+.rivals__box__items{
+    display: flex !important;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.rivals__box__items__inner{
+    position: relative;
+    background-color: #0044D7;
+    width: 100%;
+    height: 100%;
+    padding: 90px 0 72px;
+    min-height: 675px;
+}
+.rivals__box__items__inner span{
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    padding-bottom: 100px;
+}
+.rivals__box__items__inner span::before{
+    position: absolute;
+    top: 30px;
+    left: 31px;
+    content: '';
+    background-color: #B3B3B3;
+    width: calc(100% - 30px);
+    height: 1px;
+}
+.rivals__box__items__inner p{
+    display: block;
+    max-width: 510px;
+    padding-left: 30px;
+    padding-bottom: 25px;
+}
+.rivals__box__items__inner p:last-child{
+    padding-bottom: 0;
+}
+.rivals__box__items__bg{
+    position: relative;
+    padding-top: 675px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.rivals__box__items__bg h2{
+    position: absolute;
+    top: 130px;
+    left: -100px;
+    display: block;
+    font-family: 'Gotham';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120%;
+    max-width: 491px;
+    margin-right: 250px;
+}
+.stats{
+    padding: 200px 0 86px 0;
+}
+.stats__title{
+    position: relative;
+    display: block;
+    padding: 50px 0 10px;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 96%;
+    text-transform: uppercase;
+    color: #0044D7;
+    border-bottom: 1px solid #B3B3B3;
+}
+.stats__desc{
+    position: relative;
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200%;
+    color: #000000;
+}
+.stats__box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-top: 100px;
+}
+.stats__box__items{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 45%;
+    max-width: 45%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.stats__number{
+    display: block;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 96%;
+    text-transform: uppercase;
+    color: #313131;
+}
+.stats__img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: 1920px;
+    height: calc(100% + 90px);
+    max-height: 1405px;
+}
+.partners{
+    padding: 200px 0;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.partners h2{
+    display: block;
+    font-family: 'Gotham';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120%;
+    color: #181818;
+    padding-bottom: 50px;
+}
+.partners__box{
+    display: flex;
+    border-top: 1px solid #B3B3B3;
+    border-bottom: 1px solid #B3B3B3;
+}
+.partners__box__items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 20%;
+    max-width: 20%;
+    border-right: 1px solid #B3B3B3;
+}
+.partners__box__items__inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+}
+.partners__img{
+    min-height: 145px;
+    object-fit: contain;
+}
+.partners__box .slick-next{
+    bottom: unset;
+    top: -110px;
+    right: 25px;
+    background: #000;
+    border: 1px solid #000;
+}
+.partners__box .slick-prev{
+    bottom: unset;
+    top: -110px;
+    right: 85px;
+    background: #000;
+    border: 1px solid #000;
+}
+.partners__box .slick-next:hover, .partners__box .slick-prev:hover{
+    border: 1px solid #0044D7;
+    background-color: #0044D7;
+}
+@media (min-width: 1439px){
+    .benefits__box__items__img img{
+        height: 100%;
     }
 }
