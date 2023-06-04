@@ -6,9 +6,14 @@ $(document).ready(function() {
         $('.about__box__item__inner').removeClass('about__box__item__inner--active');
 		jQuery("#"+id).addClass('about__box__item__inner--active');	
     });
+	$('.menu__btn').on('click', function (e) {
+        e.preventDefault();
+		$('.menu__btn').toggleClass('menu__btn--active');
+        $('.header__menu__list').toggleClass('header__menu__list--active');
+    });
     $('.services__box').slick({
-		slidesToShow: 2,
-		slidesToScroll: 2,
+		slidesToShow: 1,
+		slidesToScroll: 1,
 		rows: 1,
 		arrows: true,
 		dots: false,
