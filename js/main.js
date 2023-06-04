@@ -10,6 +10,7 @@ $(document).ready(function() {
         e.preventDefault();
 		$('.menu__btn').toggleClass('menu__btn--active');
         $('.header__menu__list').toggleClass('header__menu__list--active');
+		$('.header--single__list').toggleClass('header__menu__list--active');
     });
     $('.services__box').slick({
 		slidesToShow: 1,
@@ -30,8 +31,8 @@ $(document).ready(function() {
 		infinite: false
 	});
 	$('.rivals__box').slick({
-		slidesToShow: 2,
-		slidesToScroll: 2,
+		slidesToShow: 1,
+		slidesToScroll: 1,
 		rows: 1,
 		arrows: true,
 		dots: false,
@@ -45,6 +46,20 @@ $(document).ready(function() {
 		arrows: true,
 		dots: false,
 		autoplay: true,
-		infinite: false
+		infinite: false,
+		responsive: [
+		  {
+			breakpoint: 767,
+			settings: {
+			  slidesToShow: 3
+			}
+		  },
+		  {
+			breakpoint: 575,
+			settings: {
+			  slidesToShow: 2
+			}
+		  },
+		]
 	});
 });
