@@ -814,6 +814,12 @@ section{
 .callme__form__btn:hover{
     background: #0044D7;
 }
+.callme__form p{
+    display: block;
+    color: #000;
+    padding-top: 15px;
+    font-size: 14px;
+}
 .hero{
     background-position: center;
     background-repeat: no-repeat;
@@ -1532,7 +1538,7 @@ section{
     .breadcrumbs h1{
         font-size: 90px;
     }
-    .contacts{
+    .contacts, .hero{
         margin-top: -30px;
     }
     .about__box{
@@ -1584,6 +1590,24 @@ section{
     .contacts__box__items:last-child{
         flex: 0 0 40%;
         max-width: 40%;
+    }
+    .hero h2{
+        font-size: 48px;
+    }
+    .hero p{
+        font-size: 30px;
+    }
+    .period__box__items__inner h3{
+        font-size: 48px;
+    }
+    .period__box__items__desc h4{
+        font-size: 40px;
+    }
+    .engineer{
+        padding: 80px 0;
+    }
+    .enginner__img{
+        max-width: calc(60% - 167px);
     }
     .footer__box{
         grid-template-columns: 20% auto 25%;
@@ -1766,6 +1790,49 @@ section{
     .map__box{
         padding-left: 0;
     }
+    .perion__box{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .period__box__items{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 15px;
+    }
+    .period__box__items:last-child{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .period__box__items__desc{
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .period__box__items__inner h3 {
+        font-size: 40px;
+        max-width: 100%;
+    }
+    .period__box__items__desc h4 {
+        font-size: 30px;
+    }
+    .period__box__items__inner{
+        padding-left: 0;
+    }
+    .period__box__items__desc:last-child{
+        border-bottom: 1px solid #000000;
+    }
+    .period__box__items__desc{
+        margin-bottom: 0;
+        padding-top: 50px;
+    }
+    .enginner__img{
+        display: none;
+    }
+    .enginner__box__items__inner{
+        margin-left: 0;
+    }
     .footer__box {
         grid-template-columns: repeat(1, 1fr);
         gap: 25px 0px;
@@ -1817,6 +1884,9 @@ section{
     .callme{
         padding: 80px 0;
     }
+    .hero{
+        padding-top: 80px;
+    }
     .cases__box__items__inner{
         padding-left: 15px;
         padding-right: 15px;
@@ -1861,6 +1931,22 @@ section{
         padding: 10px 10px 0 5px;
         font-size: 16px;
     }
+    .perion__box{
+        padding: 80px 0;
+    }
+    .period__box__items__desc{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .enginner__box__items:first-child{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .enginner__box__items:last-child{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-top: 30px;
+    }
 }
 @media (max-width: 575px){
     .header__box__link{
@@ -1876,7 +1962,7 @@ section{
     .breadcrumbs h1{
         font-size: 45px;
     } 
-    .contacts {
+    .contacts, .hero {
         margin-top: -15px;
     }
     .contacts__box__items:first-child{
@@ -1902,6 +1988,24 @@ section{
     .cases__box__items__inner {
         padding-top: 20%;
         padding-bottom: 20%;
+    }
+    .hero p {
+        font-size: 24px;
+    }
+    .period__box__items__desc{
+        padding-top: 30px;
+    }
+    .period__box__items__desc p{
+        padding-bottom: 30px;
+    }
+    .period__box__items__desc h4 {
+        font-size: 26px;
+    }
+    .enginner__box__items__inner h5{
+        font-size: 25px;
+    }
+    .enginner__box__items__inner p{
+        font-size: 18px;
     }
     .footer__box__items:nth-child(2n){
         display: none;
@@ -1932,6 +2036,16 @@ section{
     .callme__box__items {
         font-size: 24px;
     }
+    .hero h2 {
+        font-size: 40px;
+    }
+    .period__box__items__inner h3{
+        font-size: 33px;
+    }
+    .gallery__box__items{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 @media (max-width: 374px){
     .header__content h1{
@@ -1944,6 +2058,12 @@ section{
     .header--single__box{
         grid-template-columns: 160px auto;
     }
+    .breadcrumbs h1 {
+        font-size: 36px;
+    }
+    .hero h2 {
+        font-size: 33px;
+    }
     .geography__box h2{
         font-size: 33px;
     }
@@ -1952,6 +2072,9 @@ section{
     }
     .info__box__items__inner h2{
         font-size: 33px;
+    }
+    .hero p {
+        font-size: 20px;
     }
     .geography__box p{
         font-size: 16px;
