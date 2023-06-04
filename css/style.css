@@ -311,6 +311,7 @@ section{
 .services__box__row{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 .services__box__items__inner{
     display: flex;
@@ -1201,15 +1202,17 @@ section{
 }
 .shortlist__box__items{
     display: flex !important;
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 .shortlist__box__items__bg{
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    display: flex;
+    flex: 0 0 50%;
+    max-width: 50%;
     padding: 50px 0 0 50px;
     font-family: 'Gotham';
     font-weight: 700;
@@ -1220,11 +1223,15 @@ section{
 .shortlist__box__items__bg h3{
     display: block;
     padding-bottom: 270px;
+    line-height: 120%;
     max-width: 520px;
 }
 .shortlist__box__items__inner{
     position: relative;
-    width: 100%;
+    display: flex;
+    flex: 0 0 50%;
+    max-width: 50%;
+    flex-direction: column;
     background-color: #0044D7;
     padding: 50px 0 0 50px;
     min-height: 474px;
@@ -1275,7 +1282,7 @@ section{
 .work__box__items__link{
     position: relative;
     width: 100%;
-    height: 550px;
+    min-height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -1538,6 +1545,12 @@ section{
     .breadcrumbs h1{
         font-size: 90px;
     }
+    .breadcrumbs__title{
+        padding-bottom: 80px;
+    }
+    .breadcrumbs__title h1{
+        font-size: 50px;
+    }
     .contacts, .hero{
         margin-top: -30px;
     }
@@ -1608,6 +1621,58 @@ section{
     }
     .enginner__img{
         max-width: calc(60% - 167px);
+    }
+    .benefits__box{
+        grid-template-columns: 50% 50%;
+    }
+    .benefits__title{
+        font-size: 50px;
+    }
+    .benefits__box__items:nth-child(2n){
+        display: none;
+    }
+    .directions{
+        margin-top: 80px;
+        padding-top: 80px;
+    }
+    .directions h2{
+        font-size: 50px;
+    }
+    .shortlist__box__items__bg{
+        font-size: 50px;
+    }
+    .shortlist__box__items__inner h3{
+        font-size: 32px;
+    }
+    .direction__box__items__inner{
+        background-color: #F2F2F2;
+        color: #000;
+        padding: 40px 15px;
+    }
+    .direction__box__items__inner h3{
+        border-top: 1px solid #000;
+    }
+    .direction__box__items__inner p{
+        opacity: 1;
+    }
+    .work{
+        padding-top: 80px;
+    }
+    .work h2{
+        font-size: 50px;
+    }
+    .work__box__items__link h3{
+        color: #fff;
+        font-size: 30px;
+    }
+    .work__box__items__link .work__box__items__img{
+        opacity: 1;
+    }
+    .work__box__items__link .work__box__items__list{
+        display: block;
+    }
+    .work__box__items__list{
+        font-size: 18px;
     }
     .footer__box{
         grid-template-columns: 20% auto 25%;
@@ -1833,6 +1898,23 @@ section{
     .enginner__box__items__inner{
         margin-left: 0;
     }
+    .breadcrumbs__title h1{
+        font-size: 40px;
+    }
+    .breadcrumbs__title h1{
+        padding-top: 80px;
+    }
+    .shortlist__box__items__bg{
+        padding: 50px 15px;
+        min-height: 400px;
+    }
+    .shortlist__box__items__inner{
+        padding: 50px 15px;
+        min-height: 400px;
+    }
+    .shortlist__box__items__bg h3{
+        padding-bottom: 50px;
+    }
     .footer__box {
         grid-template-columns: repeat(1, 1fr);
         gap: 25px 0px;
@@ -1947,6 +2029,70 @@ section{
         max-width: 100%;
         padding-top: 30px;
     }
+    .directions{
+        margin-top: 210px;
+    }
+    .shortlist__box__items__bg{
+        flex: 0 0 100%;
+        max-width: calc(100% - 15px);
+        padding: 40px 15px;
+        min-height: auto;
+    }
+    .shortlist__box__items__inner{
+        flex: 0 0 100%;
+        max-width: calc(100% - 15px);
+        padding: 40px 15px 100px;
+        min-height: auto;
+    }
+    .benefits__title{
+        position: relative;
+        max-width: 100%;
+        font-size: 40px;
+    }
+    .benefits__title h2{
+        position: relative;
+        top: 80px;
+    }
+    .benefits__box{
+        grid-template-columns: auto;
+    }
+    .benefits__box__items--bottom{
+        margin-top: 130px;
+    }
+    .directions h2 {
+        font-size: 40px;
+    }
+    .work h2 {
+        font-size: 40px;
+        padding-bottom: 30px;
+    }
+    .shortlist__box__items__bg h3{
+        font-size: 40px;
+    }
+    .directions{
+        padding-bottom: 285px;
+    }
+    .direction__box__items{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .direction__box__items__inner{
+        min-height: 300px;
+    }
+    .direction__box__items__inner h3{
+        margin-top: 40px;
+    }
+    .work__box__items{
+        flex: 0 0 100%;
+        max-width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #B3B3B3;
+    }
+    .work__box__items__link{
+        min-height: 450px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 @media (max-width: 575px){
     .header__box__link{
@@ -2007,6 +2153,21 @@ section{
     .enginner__box__items__inner p{
         font-size: 18px;
     }
+    .breadcrumbs__title h1{
+        font-size: 33px;
+    }
+    .benefits__title{
+        font-size: 33px;
+    }
+    .directions h2 {
+        font-size: 33px;
+    }
+    .shortlist__box__items__bg h3{
+        font-size: 33px;
+    }
+    .shortlist__box__items__inner h3 {
+        font-size: 26px;
+    }
     .footer__box__items:nth-child(2n){
         display: none;
     }
@@ -2061,6 +2222,12 @@ section{
     .breadcrumbs h1 {
         font-size: 36px;
     }
+    .breadcrumbs__title h1{
+        font-size: 27px;
+    }
+    .benefits__title {
+        font-size: 27px;
+    }
     .hero h2 {
         font-size: 33px;
     }
@@ -2087,5 +2254,26 @@ section{
     }
     .cases__box__items__inner{
         font-size: 20px;
+    }
+    .benefits__box__items__content{
+        padding: 29px 10px;
+    }
+    .direction__box__items__inner h3{
+        font-size: 20px;
+    }
+    .shortlist__box__items__bg h3 {
+        font-size: 27px;
+    }
+    .shortlist__box__items__inner h3 {
+        font-size: 24px;
+    }
+    .work h2{
+        font-size: 33px;
+    }
+    .work__box__items__link h3{
+        font-size: 28px;
+    }
+    .work__box__items__list p{
+        font-size: 16px;
     }
 }
